@@ -32,8 +32,8 @@ class AccountViewSet(viewsets.ModelViewSet):
     serializer_class = MyUserSerializer
     queryset = MyUser.objects.all()
 
-    def post(self, request):
-        print(f'{"="*45}')
-        print("ポストきた")
+    # def post(self, request):
+    #     print(f'{"="*45}')
+    #     print("ポストきた")
 
 # ======================================================================

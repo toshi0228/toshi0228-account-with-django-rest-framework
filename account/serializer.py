@@ -11,9 +11,6 @@ class MyUserSerializer(serializers.ModelSerializer):
                    'profile', "is_active", "is_staff", "last_login")
 
     def create(self, validated_data):
-        print(f'{"="*105}')
-        print(validated_data)
-        print(f'{"="*105}')
 
         user = MyUser.objects.create_user(
             email=validated_data['email'],

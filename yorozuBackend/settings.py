@@ -39,11 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'taggit',
+    'plan',
     'djoser',
     'account',
     'corsheaders'
-
 ]
+
+
+# taggit タグのため必要
+# djoser tokenのためのurlを作成
 
 
 AUTH_USER_MODEL = 'account.MyUser'

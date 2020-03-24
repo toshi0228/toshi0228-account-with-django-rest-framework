@@ -49,7 +49,7 @@ class MyUser(AbstractBaseUser):
         max_length=255,
         unique=True,
     )
-    password = models.CharField("password", max_length=30, unique=True)
+    password = models.CharField("password", max_length=255, unique=True)
     profile = models.CharField('profile', max_length=255, blank=True)
     # name = models.CharField(max_length=255)
     # date_of_birth = models.DateField()
